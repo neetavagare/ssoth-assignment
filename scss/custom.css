@@ -18,8 +18,7 @@
   text-transform: uppercase;
   background-color: #E2E6E9;
 }
-
-._texxt1 {
+.header_row1 ._texxt1 {
   font-size: 11px;
   letter-spacing: 0.6px;
   color: #354E57;
@@ -28,8 +27,7 @@
   float: left;
   margin-right: 40px;
 }
-
-.texxt2 {
+.header_row1 .texxt2 {
   font-size: 11px;
   letter-spacing: 0.6px;
   color: #354E57;
@@ -225,32 +223,35 @@
   margin: 0;
   padding: 0;
 }
-
-.details p:nth-child(1) {
+.cards .details .doller-empty {
+  margin-bottom: 0.8rem;
+}
+.cards .details .add-to-card-btn:hover {
+  background-color: white;
+}
+.cards .details .doller1 {
+  color: #A67744;
+  text-decoration: line-through;
+  display: inline;
+}
+.cards .details .doller {
+  display: inline;
+  font-size: 14px;
+}
+.cards .details p:nth-child(1) {
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 0;
 }
-
-.details p:nth-child(3) {
+.cards .details p:nth-child(3) {
   font-size: 14px;
 }
-
-.doller1 {
-  text-decoration: line-through;
-  display: inline;
-}
-
-.doller {
-  display: inline;
-}
-
-.details button {
+.cards .details button {
   border: 1px solid #354E57;
   width: 100%;
   background-color: #EEF2F4;
 }
-.details button .fa-cart-shopping {
+.cards .details button .fa-cart-shopping {
   padding-right: 15px;
 }
 
@@ -323,13 +324,12 @@
   color: white;
   background-color: #354E57;
 }
-
-.input-group {
+.subscribe_btn .input-group {
   padding-top: 30px;
   padding-right: 70px;
   padding-bottom: 90px;
 }
-.input-group .form-control {
+.subscribe_btn .input-group .form-control {
   background-color: #354E57;
 }
 
@@ -759,14 +759,6 @@ html body {
     width: 100%;
   }
 }
-.doller-empty {
-  margin-bottom: 0.8rem;
-}
-
-.add-to-card-btn:hover {
-  background-color: white;
-}
-
 a {
   cursor: pointer;
 }
@@ -782,4 +774,4 @@ a {
 }
 .carousel .carousel-indicators .active {
   background-color: #547665;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=custom.css.map */

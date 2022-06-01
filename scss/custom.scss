@@ -11,6 +11,9 @@ $color-Alabasterr: #F7F7F7;
 $color-Rangitoto: #2E2E22;
 $color-header: #E2E6E9;
 $color-Alabasterr: #F7F7F7;
+// $color-Alabasterr: #F7F7F7;
+// $color-Oxfort: #354E57;
+
 
 @mixin h5_text {
     font-size: 11px;
@@ -40,20 +43,19 @@ $color-Alabasterr: #F7F7F7;
     text-transform: uppercase;
     background-color: $color-header;
 
+    ._texxt1 {
+        @include h5_text;
+        float: left;
+
+        margin-right: 40px;
+    }
+
+    .texxt2 {
+        @include h5_text;
+
+    }
+
 }
-
-._texxt1 {
-    @include h5_text;
-    float: left;
-
-    margin-right: 40px;
-}
-
-.texxt2 {
-    @include h5_text;
-
-}
-
 
 .sooth {
     letter-spacing: 1.6px;
@@ -255,43 +257,48 @@ $color-Alabasterr: #F7F7F7;
         flex-direction: column;
         margin: 0;
         padding: 0;
+
+        .doller-empty {
+            margin-bottom: 0.8rem;
+        }
+
+        .add-to-card-btn:hover {
+            background-color: white;
+        }
+
+        .doller1 {
+            color: $color-cape;
+            text-decoration: line-through;
+            display: inline;
+        }
+
+        .doller {
+            display: inline;
+            font-size: 14px;
+        }
+
+        p:nth-child(1) {
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+
+        p:nth-child(3) {
+            font-size: 14px;
+        }
+
+        button {
+            border: 1px solid $color-Oxfort;
+            width: 100%;
+            background-color: $color-Athens_grey_2;
+
+            .fa-cart-shopping {
+                padding-right: 15px;
+            }
+        }
     }
 }
 
-// & .image_hover1 :hover{
-//         background: url("./images/imagee.jpeg") no-repeat;
-// }
-
-.details p:nth-child(1) {
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0;
-}
-
-.details p:nth-child(3) {
-    font-size: 14px;
-}
-
-.doller1 {
-    text-decoration: line-through;
-    display: inline;
-
-}
-
-.doller {
-    display: inline;
-}
-
-
-.details button {
-    border: 1px solid $color-Oxfort;
-    width: 100%;
-    background-color: $color-Athens_grey_2;
-
-    .fa-cart-shopping {
-        padding-right: 15px;
-    }
-}
 
 .header_img {
     background-color: $color-como;
@@ -337,8 +344,6 @@ $color-Alabasterr: #F7F7F7;
         display: flex;
         align-items: center;
 
-        // justify-content: center;
-        // text-align: center;
         .clean {
             padding-left: 110px;
 
@@ -377,15 +382,15 @@ $color-Alabasterr: #F7F7F7;
     border: 1px solid whitesmoke;
     color: white;
     background-color: $color-Oxfort;
-}
 
-.input-group {
-    padding-top: 30px;
-    padding-right: 70px;
-    padding-bottom: 90px;
-
-    .form-control {
-        background-color: $color-Oxfort;
+    .input-group {
+        padding-top: 30px;
+        padding-right: 70px;
+        padding-bottom: 90px;
+    
+        .form-control {
+            background-color: $color-Oxfort;
+        }
     }
 }
 
@@ -398,6 +403,7 @@ $color-Alabasterr: #F7F7F7;
         font-size: 14px;
         letter-spacing: 0.6px;
     }
+    
 }
 
 .footer_links {
@@ -581,8 +587,6 @@ $color-Alabasterr: #F7F7F7;
         }
     }
 
-
-
     .header_imges {
         .half_headerr {
             padding-left: 0px;
@@ -753,8 +757,6 @@ $color-Alabasterr: #F7F7F7;
     padding: 10px;
 }
 
-$color-Alabasterr: #F7F7F7;
-$color-Oxfort: #354E57;
 
 
 html body {
@@ -811,13 +813,9 @@ html body {
         padding-left: 50px;
 
     }
-
-
 }
 
 .nav__link {
-    // display: flex;
-    // align-items: center;
     padding: 12px 10px;
 }
 
@@ -917,15 +915,11 @@ html body {
 
 }
 
-.doller-empty {
-    margin-bottom: 0.8rem;
-}
 
-.add-to-card-btn:hover {
-    background-color: white;
-}
 
-a{
+
+
+a {
     cursor: pointer;
 }
 
